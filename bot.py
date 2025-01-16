@@ -1,12 +1,7 @@
 #Translation Bot Usig Telethon And Google Translate Module
 from os import system
-#Try To Import Modules
-try:
-    from telethon import TelegramClient, events
-    from googletrans import Translator
-except ImportError:
-    #Install Modules If Not Installed
-    system('pip install telethon googletrans==4.0.0-rc1')
+from telethon import TelegramClient, events
+from googletrans import Translator
 
 #Some Cute Vars
 translator = Translator()
